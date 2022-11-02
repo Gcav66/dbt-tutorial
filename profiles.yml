@@ -1,0 +1,23 @@
+dbt-tutorial-gh:
+  outputs:
+    dev:
+      account: "{{ env_var('SF_ACCOUNT') }}" 
+      database: "{{ env_var('SF_DATABASE') }}"
+      password: "{{ env_var('SF_PASSWORD') }}" 
+      role: "{{ env_var('SF_ROLE') }}"
+      threads: 1
+      type: snowflake
+      user: "{{ env_var('SF_USER') }}"
+      warehouse: "{{ env_var('SF_WAREHOUSE') }}"
+      schema: "{{ env_var('SF_SCHEMA') }}"
+    prod:
+      account: "{{ env_var('SF_PROD_ACCOUNT') }}" 
+      database: "{{ env_var('SF_PROD_DATABASE') }}"
+      password: "{{ env_var('SF_PROD_PASSWORD') }}" 
+      role: "{{ env_var('SF_PROD_ROLE') }}"
+      threads: 1
+      type: snowflake
+      user: "{{ env_var('SF_PROD_USER') }}"
+      warehouse: "{{ env_var('SF_PROD_WAREHOUSE') }}"
+      schema: "{{ env_var('SF_PROD_SCHEMA') }}"
+  target: dev
