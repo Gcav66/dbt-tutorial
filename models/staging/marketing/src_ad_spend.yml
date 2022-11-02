@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: dash_ad_spend
+    database: raw
+    schema: dash_ad_spend
+    tables:
+      - name: monthly_revenue
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+      - name: campaign_spend
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+      - name: budget_allocations_and_roi
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
