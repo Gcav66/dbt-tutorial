@@ -1,0 +1,40 @@
+name: test_run
+
+on:
+  pull_request:
+    branches:
+      - main
+env:
+  DBT_PROFILES_DIR: ./
+  SF_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
+  SF_DATABASE: ${{ secrets.SF_DATABASE }}
+  SF_PASSWORD: ${{ secrets.SF_PASSWORD }}
+  SF_USER: ${{ secrets.SF_USER }}
+  SF_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
+  SF_ROLE: ${{ secrets.SF_ROLE }}
+  SF_SCHEMA: ${{ secrets.SF_SCHEMA }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE
+      - uses: actions/checkout@v3
+
+      # Set up Python 3.8 environment
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.8"
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Run unit tests
+        run: |
+          dbt run
+    
