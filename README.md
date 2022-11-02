@@ -1,4 +1,4 @@
-Basic AF dbt-python ML example with Github Actions
+Basic dbt-python ML example with Github Actions
 
 ### Motivation: 
 
