@@ -1,15 +1,14 @@
-Welcome to your new dbt project!
+Basic AF dbt-python ML example with Github Actions
 
-### Using the starter project
+### Motivation: 
 
-Try running the following commands:
-- dbt run
-- dbt test
+- Trying to level up on software engineering practices for data science
 
+### Disclaimer:
+
+- If your idea of production is sending Untitled_17.ipynb as an email attachment, this is NOT for you
 
 ### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+- My favorite Snowpark ML example (used here) from [Dash Desai](https://github.com/Snowflake-Labs/snowpark-python-demos/tree/main/Advertising-Spend-ROI-Prediction)
+- Good dbt github-actions example [Andre De Vries](https://www.andredevries.dev/posts/schedule-dbt-github-actions)
+- Another good dbt github-actions example [Tuan Nguyen](https://towardsdatascience.com/how-to-deploy-dbt-to-production-using-github-action-778bf6a1dff6)
