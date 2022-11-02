@@ -1,0 +1,3 @@
+dbt-snowflake
+pandas
+scikit-learn
