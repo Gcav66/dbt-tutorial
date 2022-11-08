@@ -12,3 +12,11 @@ Basic dbt-python ML example with Github Actions
 - My favorite Snowpark ML example (used here) from [Dash Desai](https://github.com/Snowflake-Labs/snowpark-python-demos/tree/main/Advertising-Spend-ROI-Prediction)
 - Good dbt github-actions example [Andre De Vries](https://www.andredevries.dev/posts/schedule-dbt-github-actions)
 - Another good dbt github-actions example [Tuan Nguyen](https://towardsdatascience.com/how-to-deploy-dbt-to-production-using-github-action-778bf6a1dff6)
+
+### Setup
+* Clone repo
+* Have python>=3.8
+ * I prefer a clean conda environment with python3.8 for
+
+ * conda create -n foo_py38 python=3.8
+* pip install -r requirements.txt
