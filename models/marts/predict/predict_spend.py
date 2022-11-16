@@ -12,6 +12,7 @@ from joblib import dump
 from datetime import datetime
 
 def model(dbt, session):
+    """Trains a sklearn model on a hard-coded dataset with hard-coded hyperparams and estimator type"""
     dbt.config(
         materialized="incremental",
         packages=["pandas", "scikit-learn", "joblib"]
