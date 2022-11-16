@@ -1,0 +1,14 @@
+export SF_ACCOUNT= 
+export SF_DATABASE= 
+export SF_PASSWORD= 
+export SF_ROLE= 
+export SF_USER= 
+export SF_WAREHOUSE= 
+export SF_SCHEMA= 
+export SF_PROD_ACCOUNT=  
+export SF_PROD_DATABASE= 
+export SF_PROD_PASSWORD=  
+export SF_PROD_ROLE= 
+export SF_PROD_USER= 
+export SF_PROD_WAREHOUSE= 
+export SF_PROD_SCHEMA= 
